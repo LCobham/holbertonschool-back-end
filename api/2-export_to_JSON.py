@@ -2,9 +2,9 @@
 """
     This module gathers some fake data from a REST API
 """
+import json
 import requests
 import sys
-import json
 
 if __name__ == "__main__":
     try:
@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
         dictionary = {str(empID): taskList}
 
-        with open("2.json", "w", encoding="utf-8") as f:
+        with open(f"{empID}.json", "w", encoding="utf-8") as f:
             json.dump(dictionary, f)
 
     except SyntaxError:

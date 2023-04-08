@@ -2,9 +2,9 @@
 """
     This module gathers some fake data from a REST API
 """
+import csv
 import requests
 import sys
-import csv
 
 if __name__ == "__main__":
     try:
@@ -28,7 +28,7 @@ if __name__ == "__main__":
                 tsk['title']
             ])
 
-        with open("2.csv", "w", newline='') as f:
+        with open(f"{empID}.csv", "w", newline='') as f:
             writer = csv.writer(f, quotechar='"', quoting=csv.QUOTE_ALL)
             writer.writerows(taskList)
 

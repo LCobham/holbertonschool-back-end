@@ -27,7 +27,7 @@ if __name__ == "__main__":
                 completedList.append(tsk['title'])
 
         print(f"Employee {empName} is done with"
-              f" ({completedTasks}/{len(tasks)}) tasks:")
+              f" tasks({completedTasks}/{len(tasks)}):")
         for tsk in completedList:
             print(f"\t{tsk}")
 
