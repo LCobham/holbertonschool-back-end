@@ -29,7 +29,7 @@ if __name__ == "__main__":
         print(f"Employee {empName} is done with"
               f" tasks({completedTasks}/{len(tasks)}):")
         for tsk in completedList:
-            print(f"\t{tsk}")
+            print(f"\t {tsk}")
 
     except SyntaxError:
         print("USAGE: ./0-gather_data_from_an_API.py <employee ID>")
